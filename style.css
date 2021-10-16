@@ -104,6 +104,7 @@ label.carousel {
 
 .carousel img {
     margin-inline: auto;
+    max-height: 479px;
 }
 
 
