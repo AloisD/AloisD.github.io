@@ -4,8 +4,8 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #05668D;
-    color: #F0F3BD;
+    background-color: #3565a5;
+    color: #f0f7ff;
     cursor: url('/cursor-dark.png'), auto;
     margin: 0;
     overflow-x: hidden;
@@ -49,7 +49,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #F0F3BD;
+    color: #f0f7ff;
     cursor: url('/cursor-light.png'), auto;
     position: relative ;
     left: 0;
@@ -64,7 +64,7 @@ nav {
 }
 
 nav a {
-    color: #F0F3BD;
+    color: #f0f7ff;
     justify-self: center;
     cursor: url('/cursor-light-hover.png'), auto;
 }
@@ -74,7 +74,7 @@ main {
 }
 
 h1 {
-    color: #F0F3BD;
+    color: #f0f7ff;
     text-align: center;
     padding: 0.5em;
     margin: 0.5em;
@@ -83,19 +83,19 @@ h1 {
 h2 {
     padding-top: 1.5em;
     padding-bottom: 0.5em;
-    color: #05668D;
+    color: #3565a5;
     text-align: center;
 }
 
 h3 {
-    color: #02C39A;
+    color: #b3cbe6;
 }
 
 /* css for the carousel */
 label.carousel {
     cursor: url('/cursor-ultralight.png'), auto;
-	background: #05668D;
-	color: #F0F3BD;
+	background: #3565a5;
+	color: #f0f7ff;
 	transition: 400ms ease-out;
 	display: inline-block;
 	width: 100vw;
@@ -128,7 +128,7 @@ input.carousel {
 	left: 0;
 	right: 0;
 	padding: 1rem;
-	color: #F0F3BD;
+	color: #f0f7ff;
 	text-align: center;
 	transition: all 300ms linear;
 	opacity: 0;
@@ -157,17 +157,17 @@ input.carousel:nth-of-type(3):checked ~ label.carousel {
 }
 
 label.carousel[for="project2"]{
-	background: #02C39A;
+	background: #b3cbe6;
 }
 
 label.carousel[for="project2"] h3{
-	color: #05668D;
+	color: #3565a5;
 }
 
 label.carousel:before,
 label.carousel:after {
     cursor: url('/cursor-light-hover.png'), auto;
-	color: #F0F3BD;
+	color: #f0f7ff;
 	display: block;
 	background: #028090;
 	position: absolute;
@@ -213,11 +213,11 @@ p {
 
 textarea {
     border-radius: 25px;
-    border-color: #05668D;
+    border-color: #3565a5;
     border-style: solid;
     border-width: 2px;
     background-color: #028090;
-    color: #F0F3BD;
+    color: #f0f7ff;
     margin: 1em;
     padding: 1em;
     width: auto;
@@ -227,11 +227,11 @@ textarea {
 
 input {
     border-radius: 25px;
-    border-color: #05668D;
+    border-color: #3565a5;
     border-style: solid;
     border-width: 2px;
     background-color: #028090;
-    color: #F0F3BD;
+    color: #f0f7ff;
     margin: 1em;
     padding: 1em;
     width: auto;
@@ -240,7 +240,7 @@ input {
 }
 
 ::placeholder{
-    color: #02C39A;
+    color: #b3cbe6;
 }
 
 button {
@@ -249,7 +249,7 @@ button {
     border-style: solid;
     border-width: 2px;
     background-color: #00A896;
-    color: #F0F3BD;
+    color: #f0f7ff;
     padding: 0.5em;
     margin: 0.5em;
     align-self: center;
@@ -260,9 +260,9 @@ button {
 footer {
     display: flex;
     justify-content: center;
-    background-color: #05668D;
+    background-color: #3565a5;
     cursor: url('/cursor-light.png'), auto;	
-    color: #F0F3BD;
+    color: #f0f7ff;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -276,7 +276,7 @@ em {
 .cover {
     position: relative;
     font-family: 'Poiret One', cursive;
-    color: #05668D;
+    color: #3565a5;
     font-size: 6vw;
     text-align: end;
 }
@@ -308,7 +308,7 @@ em {
     padding: 1em 0;
     margin: 1em;
     border-radius: 5px;
-    background-color: #05668D;
+    background-color: #3565a5;
     cursor: url('/cursor-light.png'), auto;
     display: flex;
     flex-direction: column;
@@ -331,7 +331,7 @@ em {
 }
 
 .grid-vertical div {
-    background-color: #05668D;
+    background-color: #3565a5;
     cursor: url('/cursor-light.png'), auto;
 }
 
@@ -381,11 +381,11 @@ em {
 }
 
 #education{
-    background-color: #02C39A;
+    background-color: #b3cbe6;
 }
 
 #contact{
-    background-color: #02C39A;
+    background-color: #b3cbe6;
 }
 
 /*desktop mode*/
