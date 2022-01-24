@@ -5,7 +5,7 @@
   <meta name="author" content="Aloïs DELAUNE">
   <meta name="description" content="Portfolio of Aloïs Delaune, web developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monportfolio</title>
+  <title>Aloïs Delaune</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,20 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar sticky-top navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Sticky top</a>
-    </div>
-  </nav>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><h1>Mon Portfolio</h1></a>
+        <a class="navbar-brand" href="#"><h1>Aloïs Delaune</h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#projects" title="Voir mes réalisations">Projets</a>
             </li>
@@ -50,44 +45,64 @@
     </nav>
   </header>
   <main>
-    <div class="cover">
-      <img src="cover.jpg" alt="my happy place">
-      <span class="centered-text">Aloïs Delaune</span>
+<!--  mettre cette image en propriété background-image d'une dive dans le css   <img src="cover.jpg" class="img-fluid" alt="my happy place">
+ -->    
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="profilepic.png" class="img-fluid rounded-circle" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Développeur web</h5>
+            <p class="card-text">Formé au développement web, de la conception de base de données au développement front-end, je suis à la recherche d'un stage pour mettre mes compétences à l'épreuve de votre projet</p>
+          </div>
+        </div>
+      </div>
     </div>
+    
     <section id="projects">
       <div>
         <h2>Projets réalisés</h2>
       </div>
-      <form class="carousel">
-        <input class="carousel" type="radio" name="fancy" autofocus value="project1" id="project1"/>
-        <input class="carousel" type="radio" name="fancy" value="project2" id="project2"/>
-        <input class="carousel" type="radio" name="fancy" value="project3" id="project3"/>
-        <label class="carousel" for="project1">
-          <img class="hover-effect carousel" src="/ChauffeurSansVoiture/home.png" alt="Illustration du projet Chauffeur sans voiture">
-          <p>
-            <h3>Chauffeur sans voiture</h3>
-            <em>Chauffeur sans voiture</em>, filiale de <em>Yes drive me</em> à destination des seniors.
-          </p>
-          <button title="Le projet n°1 en détails">En savoir plus</button>
-        </label>
-        <label class="carousel" for="project2">
-          <img class="hover-effect" src="/ChauffeurSansVoiture/home.png" alt="Illustration du projet 2">
-          <p>
-            <h3>Projet 2</h3>
-            Résumé en quelques lignes du projet n°2.
-          </p>
-          <button title="Le projet n°2 en détails">En savoir plus</button>
-        </label>
-        <label class="carousel" for="project3">
-          <img class="hover-effect" src="/ChauffeurSansVoiture/home.png" alt="Illustration du projet 3">
-          <p>
-            <h3>Projet 3</h3>
-            Résumé en quelques lignes du projet n°3.
-          </p>
-          <button title="Le projet n°3 en détails">En savoir plus</button>
-        </label>
-        <div class="keys">&#9664; &#9670; &#9654;</div>
-      </form>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/opticprivé/placeholder.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>opticprive.com</h5>
+              <p>Site de revente de lunettes à destinations des opticiens</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Placeholder.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DonkeyEventl</h5>
+              <p>Site de billeterie pour évènements culturels</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/ChauffeurSansVoiture/home.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Chauffeur sans voiture</h5>
+              <p>Site de réservation de chauffeur à destination d'un public senior</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <section  id="education">
       <div>
@@ -100,8 +115,8 @@
           36 ans<br>
           0643543879<br>
         </div>
-        <img class="education-picture" src="profilepic.png" alt="Photographie de Aloïs Delaune">
-        <ul class="education-list">
+<!--         <img class="education-picture" src="profilepic.png" alt="Photographie de Aloïs Delaune">
+ -->        <ul class="education-list">
           <li>2004-2008 Supinfogame
             <p>École de Game Design et gestion de production</p>
           </li>
@@ -120,27 +135,6 @@
         </ul>
       </div>
     </section>
-    <section  id="articles">
-      <div>
-        <h2>Articles</h2>
-      </div>
-      <div class="grid">
-        <div>
-          <img class="hover-effect" src="Placeholder.png" alt="illsutration de l'article 1">
-          <h3>Titre de l'article 1</h3>
-          <p>Rapide résumé de l'article 1.</p>
-          <button title="Lire l'article 1">Lire</button>
-          <button title="Voir les commentaires">Commentaires</button>
-        </div>
-        <div>
-          <img class="hover-effect" src="Placeholder.png" alt="illsutration de l'article 2">
-          <h3>Titre de l'article 2</h3>
-          <p>Rapide résumé de l'article 2.</p>
-          <button title="Lire l'article 2">Lire</button>
-          <button title="Voir les commentaires">Commentaires</button>
-        </div>
-      </div>
-    </section>
     <section  id="contact">
       <div>
         <h2>Contact</h2>
@@ -156,10 +150,12 @@
       </form>
     </section>
   </main>
-  <footer>
-    <div>
-      Aloïs Delaune
-      lien linkedin, github
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">
+        Aloïs Delaune
+        lien linkedin, github
+      </span>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
