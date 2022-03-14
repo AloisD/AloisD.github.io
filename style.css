@@ -19,6 +19,11 @@ body {
     color: var(--bs-dark);
 }
 
+h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 a {
     color: var(--bs-light);
 }
@@ -39,6 +44,11 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+}
+
+.carousel-caption {
+    background-color: #3566a5e5;
+    color: var(--bs-light);
 }
 
 .idcard {
