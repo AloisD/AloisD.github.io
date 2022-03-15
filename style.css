@@ -31,6 +31,7 @@ a {
 footer {
     background-color: var(--bs-dark);
     color: var(--bs-light);
+    text-align: center;
 }
 
 .btn {
@@ -47,8 +48,20 @@ footer {
 }
 
 .carousel-caption {
-    background-color: #3566a5e5;
-    color: var(--bs-light);
+    color: var(--bs-dark);
+    position: unset;
+}
+
+.carousel-caption {
+    text-decoration: none;
+}
+
+.carousel-control-prev {
+    left: -100px;
+}
+
+.carousel-control-next {
+    right: -100px;
 }
 
 .idcard {
