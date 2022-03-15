@@ -8,7 +8,8 @@
     --bs-light: #f0f7ff;
     --bs-dark: #3565a5;
     --bs-mid: #b3cbe6;
-    --bs-body-bg: #b3cbe6;
+    --bs-body-bg: #3565a5;
+    /* --bs-body-bg: #b3cbe6; */
 }
 
 nav {
@@ -16,7 +17,7 @@ nav {
 }
 
 body {
-    color: var(--bs-dark);
+    color: var(--bs-light);
 }
 
 h2 {
@@ -48,7 +49,7 @@ footer {
 }
 
 .carousel-caption {
-    color: var(--bs-dark);
+    color: var(--bs-light);
     position: unset;
 }
 
@@ -80,6 +81,16 @@ footer {
 
 .navbar-dark .navbar-toggler {
     border-color: var(--bs-light);
+}
+
+.modal-content {
+    color: var(--bs-dark);
+    background-color: var(--bs-light);
+}
+
+#education {
+    color: var(--bs-dark);
+    background-color: var(--bs-mid);
 }
 
 #cv_link {
